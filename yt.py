@@ -65,7 +65,6 @@ def add_bg_from_local(image_file):
 	""",
 	unsafe_allow_html=True
 	)
-add_bg_from_local('driver-training-word-cloud.jpg')  
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
