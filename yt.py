@@ -472,14 +472,14 @@ def main():
 					# title, y_true, result =recommend_courses(1259404, 10, df_courses, df_norm) #30% but the courses are relevant to the 
 					#title, y_pred, y_true, result = recommend_courses(2234122, 10, df_courses, df_norm) # 90%
 					title, y_pred, y_true, result = recommend_courses(search_course_id, n_courses, df_courses, df_norm)
-					cols = initialize_course_widget(len(result))
-					titles = result['published_title']
-					categorys = result['primary_subcategory']
+					# cols = initialize_course_widget(len(result))
+					# titles = result['published_title']
+					# categorys = result['primary_subcategory']
 					#counter = 0
-					for c, t, cat in zip(cols, titles, categorys):
-						with c:
-							st.markdown(f"<a style='display: block; text-align: center;' href='#'>{t}</a>", unsafe_allow_html=True)
-							st.write(cat)
+					# for c, t, cat in zip(cols, titles, categorys):
+					# 	with c:
+					# 		st.markdown(f"<a style='display: block; text-align: center;' href='#'>{t}</a>", unsafe_allow_html=True)
+					# 		st.write(cat)
 					#for i in range(len(result)):
 					# with col1:
 					# 	st.text(result['published_title'])
@@ -496,7 +496,7 @@ def main():
 					# with col5:
 					# 	st.text(names[4])
 					# 	st.image(posters[4])
-					st.write('Course: ', str(search_course_id), '-', title.values[0], '(', y_[0], ')')
+					st.write('Course: ', str(search_course_id), '-', title.values[0], '(', y_true[0], ')')
 					st.dataframe(result)
 				except:
 					result = "Not Found"
