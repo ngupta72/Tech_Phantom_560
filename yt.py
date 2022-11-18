@@ -370,7 +370,7 @@ def main():
 		st.header('Description')
 		st.markdown('Framework for online course business providers that can be integrated with their platforms to recommend significant courses to customers. This system can also be used as a standalone application by users as well as providers to visualize and perform analytics based on the results of the recommendation models. The providers can gain insight into the relationship between the recommendation systems and related courses. Using cosine similarity and content based recommendation and machine learning techniques to build models and recommendation engines. With the necessary results and statistics, the providers can have a competitive edge in the eLearning sphere')
 
-		st.dataframe(df.head(10))
+		st.dataframe(df)
 	
 	# if choice =="EDA":
 	# 	st.subheader('Udemy Dataset')
