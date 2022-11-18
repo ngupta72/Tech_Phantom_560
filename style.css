@@ -1,8 +1,8 @@
 .streamlit-expanderHeader {
     font-family: sans-serif;
     font-weight: bold;
-    color: #e10202;
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 12px;
     background-color: #111111b3;
     border-radius: 30px;
     text-align: center;
@@ -58,8 +58,10 @@ div.e1tzin5v2:not(.css-ulq27u):not(.css-ht50i) {
     margin: 10px;
     padding: 10px;
     font-family: serif;
-    min-height: 200px;
-    min-width: 200px;
+    max-height: 400px;
+    max-width: 250px;
+    min-width: 250px;
+    min-height: 400px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +102,6 @@ div.e1tzin5v2:not(.css-ulq27u):not(.css-ht50i) {
 }
 
 .stApp.streamlit-wide  {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.164),rgba(0, 0, 0, 0.06)), url("https://wallpaperaccess.com/full/1892783.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.523),rgba(0, 0, 0, 0.381)), url("https://wallpaperaccess.com/full/1892783.jpg");
     background-size: cover;
 }
